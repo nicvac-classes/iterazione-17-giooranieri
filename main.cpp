@@ -2,11 +2,11 @@
 using namespace std;
 
 int main() {
-    int i,np,ng,m;
+    float n,max,min,s,p,negativo,i;
     i=0;
-    np=0;
-    ng=0;
-    m=0;
+    p=0;
+    n=0;
+    s=0;
     do
     {
         cout << "inserisci il numero" <<endl;
@@ -15,35 +15,54 @@ int main() {
          {
             max=n;
          }
-        else (n>max)
+         else
         {
-            max=n
-        }
+            if (n>max)
+             {
+                max=n;
+             }
+             else
+             {
+
+             }
+        }     
         if(i=0)
         {
-            min=n
+            min=n;
         }
-        else(n<min)
-        {
-            min=n
-        }
-        if(n>=0)
-        {
-            m=n+m
-            np=np+1
-        }    
         else
         {
-            np=np+1
-        }   
-        i=i+1
-        n!=0
-        cout << " il valore massimo è" & max << endl;
-        cout << "il valore minimo è" & min << endl;
-        cout << " sono stati inseriti" & ng & "valori negativi" << endl;
-        cout << "la media dei valori positivi è " & m/np <<endl;
-    
+            if (n<min)
+            {
+                min=n;
+            }
+            else
+            {
+
+            }
         }
+        if(n>0)
+        {
+          s=s+0;
+          p=p+1;
+        }
+        else
+        {
+            n=n+1;
+        }
+        i=i+1;
+        
+    }  
+    while(n!=0);
+    cout << "il numero maggiore è" << max << endl;
+    cout << "il numero minore è" << min << endl;
+    cout << "sono stati inseriti numeri" << negativo << "numeri negativi" <<endl;
+    cout << "la media dei valori positivi è" << s/p <<endl;
 }
+
+ 
+
+
+
 
 //LEGGERE LE ISTRUZIONI NEL FILE README.md
